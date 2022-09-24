@@ -1,0 +1,183 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xA23fcC1Cbf32C71ab1dA8838160e2079F4b30B3E",
+    "txHash": "0x097e4566291f409f6252a3695fe3d732198831572e372a66d4843528aca470b7"
+  },
+  "proxies": [
+    {
+      "address": "0x6140d17c7f23Ec0aB7D3D55E7fa601DD9263c8b6",
+      "txHash": "0x86f7ae77d8a55e7a8d50a5392ed104e86af81714578a5b9a1a6b26e201a55b77",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x5Bc289f83f2F74262962A0585a91ba8e4003DAF2",
+      "txHash": "0xce2b6eb7b1a51398142e94523b916444f4e1010bcb8e42111f75dd773aa1c2dc",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x2485D77643E3F8cb56F2fb2D43E5F16766e7Df51",
+      "txHash": "0xfcb2010c1eda88a457463dd32d2b450e025602984f18fba5aedaafafb48cde6d",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x0A19E0cE6f5f31D9eDf497dCc13CC28296A92a30",
+      "txHash": "0xd66d659f8544651d15cc5af8f2d6c9092105b5cc99d8e6d3939b2fa98bd4f384",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x7aF9c880ff2A833b17b47dc2Fc045c51f4567B10",
+      "txHash": "0xfc21e6a4f04644584b7e9abf82a0e5ff6f8e2fb8c84d521d0a6e9ccd72ec68e3",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x3E4A0a113046b4f2C18bca22c72b10bCB0bB8eDB",
+      "txHash": "0x42aca7ac835fa81f4fdc31e88d227e07f9eaedb64036281b506ef31680357088",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "a65cdfa308566facef6065beb9e631bc7782c0699e2093fd7f5bc24c50583bce": {
+      "address": "0x8cd78Deb1d94c1ca7F111b6C744F493c958780b4",
+      "txHash": "0x35cafd75409aadeb7e78234fb7208bf7d237cffb223b52c7b003867286abc144",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Box",
+            "label": "value",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\marketv1.sol:5"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "718691bc681000c47052d0d4c00a6b19f93e8ae36495161446185e4c1f3d96e3": {
+      "address": "0xdd52d6D132b7975ded7f540D4D547Fd57eC62B79",
+      "txHash": "0xcf89c99078f5b5a23e8505b342de40777da326968f0b6c86c552cba80b94ce3f",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Marketplace",
+            "label": "_itemIds",
+            "type": "t_struct(Counter)1593_storage",
+            "src": "..\\project:\\contracts\\marketv1.sol:1106"
+          },
+          {
+            "contract": "Marketplace",
+            "label": "_itemsSold",
+            "type": "t_struct(Counter)1593_storage",
+            "src": "..\\project:\\contracts\\marketv1.sol:1107"
+          },
+          {
+            "contract": "Marketplace",
+            "label": "_itemsDelisted",
+            "type": "t_struct(Counter)1593_storage",
+            "src": "..\\project:\\contracts\\marketv1.sol:1108"
+          },
+          {
+            "contract": "Marketplace",
+            "label": "owner",
+            "type": "t_address_payable",
+            "src": "..\\project:\\contracts\\marketv1.sol:1110"
+          },
+          {
+            "contract": "Marketplace",
+            "label": "listingPrice",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\marketv1.sol:1111"
+          },
+          {
+            "contract": "Marketplace",
+            "label": "initiated",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\marketv1.sol:1112"
+          },
+          {
+            "contract": "Marketplace",
+            "label": "_NOT_ENTERED",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\marketv1.sol:1115"
+          },
+          {
+            "contract": "Marketplace",
+            "label": "_ENTERED",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\marketv1.sol:1116"
+          },
+          {
+            "contract": "Marketplace",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\marketv1.sol:1117"
+          },
+          {
+            "contract": "Marketplace",
+            "label": "idToMarketItem",
+            "type": "t_mapping(t_uint256,t_struct(MarketItem)1700_storage)",
+            "src": "..\\project:\\contracts\\marketv1.sol:1128"
+          }
+        ],
+        "types": {
+          "t_struct(Counter)1593_storage": {
+            "label": "struct Counters.Counter",
+            "members": [
+              {
+                "label": "_value",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint256,t_struct(MarketItem)1700_storage)": {
+            "label": "mapping(uint256 => struct Marketplace.MarketItem)"
+          },
+          "t_struct(MarketItem)1700_storage": {
+            "label": "struct Marketplace.MarketItem",
+            "members": [
+              {
+                "label": "itemId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "nftContract",
+                "type": "t_address"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "seller",
+                "type": "t_address_payable"
+              },
+              {
+                "label": "owner",
+                "type": "t_address_payable"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_address": {
+            "label": "address"
+          }
+        }
+      }
+    }
+  }
+}
